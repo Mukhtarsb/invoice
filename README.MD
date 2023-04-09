@@ -4,6 +4,6 @@
 ``
 $ make start
 ``
-``
+```
 $ make stop
-``
+```
