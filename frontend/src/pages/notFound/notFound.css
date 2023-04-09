@@ -1,0 +1,32 @@
+.response {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  background-color: white;
+}
+
+.response-error {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.response-page {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 21px;
+  text-align: center;
+}
+
+.response-back {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #0904f9;
+  cursor: pointer;
+  text-align: center;
+}

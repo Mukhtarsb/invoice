@@ -1,0 +1,383 @@
+* {
+  box-sizing: border-box;
+}
+
+.invoice {
+  padding: 63px 0px 0px 85px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.invoiceList {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.invoiceHeader {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.invoiceTitle {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 33px;
+  letter-spacing: -1.125px;
+  color: #0c0e16;
+}
+
+.invoicesCount {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: -0.1px;
+  color: #888eb0;
+}
+
+.invoiceHeaderRight {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button {
+  width: 150px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: #7c5dfa;
+  border: none;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 15px;
+  margin-left: 2px;
+  color: #7c5dfa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.invoiceFilter {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  color: #0c0e16;
+  cursor: pointer;
+}
+
+.arrow {
+  margin-left: 16px;
+}
+
+.createInvoice {
+  width: 520px;
+  height: 555px;
+  overflow: scroll;
+  padding-right: 10px;
+}
+
+.modal {
+  position: fixed;
+  width: 675px;
+  background-color: #fff;
+  /* position: absolute; */
+  top: 0;
+  left: -675px;
+  padding-left: 135px;
+  padding-top: 50px;
+  padding-right: 20px;
+  z-index: 10;
+}
+
+.translate {
+  transform: translateX(100%);
+  transition: 0.5s;
+}
+
+.modalTitle {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+.modalSubtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.modalInputTitle {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.modalInput {
+  width: 100%;
+  font-size: 15px;
+  line-height: 47px;
+  margin-bottom: 18px;
+}
+
+.modalInputsGroup,
+.modalInputsGroup2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modalInputsGroup p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.modalInputsGroup input {
+  width: 147px;
+  font-size: 15px;
+  line-height: 44px;
+  margin-bottom: 45px;
+  padding: 0 15px;
+  border: 1px solid gray;
+}
+
+.modalInputsGroup2 input,
+.modalSelect {
+  width: 228px;
+  font-size: 15px;
+  height: 44px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+.itemListTitle {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.itemHeader {
+  display: grid;
+  grid-template-columns: 202px 45px 95px 60px 30px;
+  grid-template-rows: 26px;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.itemList {
+  display: grid;
+  grid-template-columns: 202px 45px 95px 60px 30px;
+  grid-template-rows: 46px;
+  grid-auto-rows: 46px;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.itemList input {
+  /* background-color: #888eb0; */
+  border-radius: 5px;
+  padding: 0 15px;
+  border: 1px solid rgb(55, 59, 83);
+  outline: none;
+}
+
+.total {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.addNewItem {
+  width: 100%;
+  height: 45px;
+  border-radius: 30px;
+  background-color: rgb(223, 227, 250);
+  color: rgb(126, 136, 195);
+  border: none;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.addNewItem:hover,
+.discard:hover,
+.saveAndSend:hover,
+.draft:hover {
+  opacity: 0.7;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.draft {
+  width: 130px;
+  height: 46px;
+  margin-right: 8px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(55, 59, 83);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.saveAndSend {
+  width: 130px;
+  height: 46px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(124, 93, 250);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.discard {
+  width: 90px;
+  height: 46px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(223, 227, 250);
+  cursor: pointer;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 5;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  z-index: 1;
+  top: 60px;
+  left: -12px;
+  border-radius: 5px;
+}
+
+.dropdown label {
+  margin-left: 10px;
+}
+
+.active {
+  display: block;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.modal input:focus {
+  border-color: rgb(124, 93, 250);
+  outline: none;
+}
+
+.modal input,
+.modal select {
+  border: 1px solid rgb(217, 218, 223);
+  outline: none;
+  border-radius: 5px;
+}
+
+.itemList div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemList svg:hover {
+  cursor: pointer;
+}
+
+.itemList input::-webkit-outer-spin-button,
+.itemList input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.itemList input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#itemList {
+  padding: 0;
+}
+
+@media (max-width: 820px) {
+  .invoice {
+    padding: 141px 0px 173px;
+  }
+
+  .invoiceList {
+    max-width: 672px;
+    margin: 0 auto;
+  }
+
+  .invoiceHeader {
+    margin-bottom: 55px;
+  }
+
+  .invoiceTitle {
+    font-size: 36px;
+    line-height: 33px;
+    letter-spacing: -1.125px;
+    margin-bottom: 8px;
+    color: rgb(12, 14, 22);
+    font-weight: bold;
+  }
+
+  .invoicesCount {
+    font-size: 12px;
+    color: #888eb0;
+  }
+
+  .modal {
+    width: 616px;
+    left: -616px;
+    padding-left: 56px;
+    padding-top: 140px;
+    padding-right: 56px;
+    z-index: 10;
+  }
+  .translate {
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+}

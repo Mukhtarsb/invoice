@@ -1,0 +1,175 @@
+.active {
+  display: block;
+  transition: 0.5s;
+}
+
+.editButtons {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.editCancel {
+  width: 96px;
+  line-height: 44px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: #f9fafe;
+  border-radius: 24px;
+  font-family: "League Spartan";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.25px;
+  color: #7e88c3;
+}
+
+.savingChange {
+  width: 138px;
+  height: 48px;
+  background: #7c5dfa;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  color: #ffffff;
+}
+
+/* .modal {
+  position: fixed;
+  width: 675px;
+  background-color: #fff;
+  top: 0;
+  left: -675px;
+  padding-left: 135px;
+  padding-top: 50px;
+  padding-right: 20px;
+  z-index: 10;
+} */
+
+.translate {
+  transform: translateX(100%);
+  transition: 0.5s;
+}
+
+.modalTitle {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+.modalSubtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.modalInputTitle {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.modalInput {
+  width: 100%;
+  font-size: 15px;
+  line-height: 47px;
+  margin-bottom: 18px;
+}
+
+.modalInputsGroup,
+.modalInputsGroup2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modalInputsGroup p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.modalInputsGroup input {
+  width: 147px;
+  font-size: 15px;
+  line-height: 44px;
+  margin-bottom: 45px;
+  padding: 0 15px;
+  border: 1px solid gray;
+}
+
+.modalInputsGroup2 input,
+.modalSelect {
+  width: 228px;
+  font-size: 15px;
+  height: 44px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+.itemListTitle {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.itemHeader {
+  display: grid;
+  grid-template-columns: 202px 45px 95px 60px 30px;
+  grid-template-rows: 26px;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.itemList {
+  display: grid;
+  grid-template-columns: 202px 45px 95px 60px 30px;
+  grid-template-rows: 46px;
+  grid-auto-rows: 46px;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.itemList input {
+  /* background-color: #888eb0; */
+  border-radius: 5px;
+  padding: 0 15px;
+  border: 1px solid rgb(55, 59, 83);
+  outline: none;
+}
+
+.total {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.addNewItem {
+  width: 100%;
+  height: 45px;
+  border-radius: 30px;
+  background-color: rgb(223, 227, 250);
+  color: rgb(126, 136, 195);
+  border: none;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.addNewItem:hover,
+.discard:hover,
+.saveAndSend:hover,
+.draft:hover {
+  opacity: 0.7;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}

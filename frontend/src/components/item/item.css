@@ -1,0 +1,121 @@
+.item {
+  width: 100%;
+  line-height: 38px;
+  padding: 15px 18px 15px 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 17px;
+  cursor: pointer;
+}
+
+.item:hover {
+  outline: 1px solid rgb(124, 93, 250);
+}
+
+.itemRightSide {
+  display: flex;
+  flex-direction: row;
+  width: 450px;
+}
+
+.itemName {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.25px;
+  color: #0c0e16;
+  min-width: 100px;
+}
+
+.itemName span {
+  color: #7e88c3;
+}
+
+.itemDate {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: -0.1px;
+  color: #888eb0;
+  min-width: 147px;
+}
+
+.itemClient {
+  width: 100%;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: -0.1px;
+  color: #858bb2;
+}
+
+.itemTotal {
+  width: auto;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: right;
+  letter-spacing: -0.25px;
+  color: #0c0e16;
+}
+
+.itemStatus {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 104px;
+  margin: 0 24px 0 36px;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.25px;
+  color: #33d69f;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(51, 214, 159);
+  margin: auto 0;
+  margin-right: 8px;
+}
+
+.noItemsContainer {
+  width: 241px;
+  height: 342px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.noItemsTitle {
+  font-family: "League Spartan";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: -0.75px;
+  color: #0c0e16;
+}
+
+.noItemsText {
+  font-family: "League Spartan";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #888eb0;
+}

@@ -1,0 +1,403 @@
+.invoiceDetailsContainer {
+  width: 100%;
+  /* height: 100vh; */
+  padding: 0px 0px 0px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.invoiceDetails {
+  width: 775px;
+  /* height: 100%; */
+  padding: 52px 48px 0px 48px;
+}
+
+.goBack {
+  margin-bottom: 32px;
+  cursor: pointer;
+
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  color: #0c0e16;
+}
+
+.goBack span {
+  margin-left: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px 32px;
+  margin-bottom: 24px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: row;
+}
+
+.statusText {
+  width: 51px;
+  display: flex;
+  align-items: center;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: -0.1px;
+  color: #858bb2;
+}
+
+.statusValue {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 104px;
+  text-align: center;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  color: #ff8f00;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(51, 214, 159);
+  margin: auto 0;
+  margin-right: 8px;
+}
+
+.edit {
+  width: 70px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 44px;
+  border: none;
+  color: rgb(126, 136, 195);
+  cursor: pointer;
+  outline: none;
+  background: #f9fafe;
+  border-radius: 24px;
+}
+
+.delete {
+  width: 80px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 44px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  background: #ec5757;
+  border-radius: 24px;
+  margin-right: 5px;
+}
+
+.delete:hover,
+.edit:hover,
+.markAsPaid:hover {
+  opacity: 0.7;
+}
+
+.rightSide {
+  width: 400px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.markAsPaid {
+  width: 120px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 44px;
+  border-radius: 30px;
+  border: none;
+  background-color: #7c5dfa;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.markAsPending {
+  width: 120px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 44px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ff8f00;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.markAsDraft {
+  width: 120px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 44px;
+  border-radius: 30px;
+  border: none;
+  background-color: #373b53;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  margin-right: 5px;
+}
+
+.menu2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 45px 48px;
+  margin-bottom: 24px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 24px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.billFrom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.billInfo {
+  width: 100%;
+}
+
+.billAddress {
+  width: 150px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.billName {
+  margin-bottom: 10px;
+}
+
+.invoiceDetailsContainer p,
+.itemList1 th {
+  font-size: 14px;
+  color: #888eb0;
+  margin: 0;
+}
+
+.invoiceDate {
+  font-size: 17px;
+  margin: 6px 0 32px;
+  font-weight: bold;
+}
+
+.invoiceInfo {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+.invoiceDateInfo {
+  width: 33.33%;
+}
+
+.clientName {
+  font-size: 17px;
+  margin: 6px 0 10px;
+  font-weight: bold;
+}
+
+.itemList1 {
+  width: 100%;
+  /* background-color: rgb(211, 207, 207); */
+  padding: 15px 30px 15px 25px;
+}
+
+.itemList1 table {
+  width: 100%;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.itemList1 th,
+.itemList1 td {
+  line-height: 42px;
+}
+
+.itemList1 td {
+  color: rgb(55, 59, 83);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.amount {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(55, 59, 83);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 32px;
+  font-weight: bold;
+}
+
+.amountDue {
+  font-size: 13px;
+}
+
+.amountTotal {
+  font-size: 25px;
+}
+
+.deleteModal {
+  display: none;
+  position: absolute;
+  width: 480px;
+  height: 249px;
+  border-radius: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 51px 48px 48px 48px;
+  background-color: #fff;
+  border: 1px solid gray;
+  z-index: 15;
+}
+
+.deleteButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 188px;
+  float: right;
+}
+
+.confirm {
+  font-family: "League Spartan";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: #0c0e16;
+  margin-bottom: 12px;
+}
+
+.deleteText {
+  font-family: "League Spartan";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  color: #888eb0;
+  margin-bottom: 14px;
+}
+
+.cancel {
+  width: 91px;
+  border: none;
+  background-color: #fff;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.25px;
+  color: #7e88c3;
+  cursor: pointer;
+}
+
+.delete2 {
+  width: 89px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 44px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  background: #ec5757;
+  border-radius: 24px;
+}
+
+.deleteOverlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  opacity: 0.5;
+}
+
+.active {
+  display: block;
+}
+
+.cancel:hover,
+.delete2:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 820px) {
+  .invoiceDetailsContainer {
+    padding: 129px 0px 0px 50px;
+  }
+
+  .invoiceDetails {
+    width: 668px;
+    padding: 0px 40px 40px 48px;
+  }
+
+  .goBack {
+    margin-bottom: 32px;
+    cursor: pointer;
+  }
+
+  .amountTotal {
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+  }
+}
